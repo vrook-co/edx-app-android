@@ -49,7 +49,7 @@ public class WebViewActivity extends BaseFragmentActivity {
             getIntent().putExtra(ARG_URL, url).putExtra(ARG_TITLE, title);
         }
 
-        final ProgressBar progress = (ProgressBar) findViewById(R.id.loading_indicator);
+/*        final ProgressBar progress = (ProgressBar) findViewById(R.id.loading_indicator);
         progress.setVisibility(View.GONE);
 
         webView = (WebView) findViewById(R.id.webView);
@@ -93,7 +93,13 @@ public class WebViewActivity extends BaseFragmentActivity {
         if (!TextUtils.isEmpty(title)) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             setTitle(title);
-        }
+        }*/
+
+        val builder = CustomTabsIntent.Builder()
+
+        val packageName = customTabHelper.getPackageNameToUse(this, url)
+        customTabsIntent.intent.setPackage(packageName) customTabsIntent.launchUrl(this, Uri.parse(url)) 
+
     }
 
 
