@@ -95,10 +95,11 @@ public class WebViewActivity extends BaseFragmentActivity {
             setTitle(title);
         } */
 
-        val builder = CustomTabsIntent.Builder()
+        val builder = CustomTabsIntent.Builder();
 
-        val packageName = customTabHelper.getPackageNameToUse(this, url)
-        customTabsIntent.intent.setPackage(packageName) customTabsIntent.launchUrl(this, Uri.parse(url)) 
+        val packageName = customTabHelper.getPackageNameToUse(this, url);
+        customTabsIntent.intent.setPackage(packageName);
+        customTabsIntent.launchUrl(this, Uri.parse(url));
 
  
     }
