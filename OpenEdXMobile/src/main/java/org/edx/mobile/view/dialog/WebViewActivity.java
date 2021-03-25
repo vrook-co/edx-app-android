@@ -18,14 +18,6 @@ import org.edx.mobile.base.BaseFragmentActivity;
 import org.edx.mobile.util.AppConstants;
 import org.edx.mobile.view.custom.URLInterceptorWebViewClient;
 
-import android.support.customtabs.CustomTabsClient;
-import android.support.customtabs.CustomTabsIntent;
-import android.support.customtabs.CustomTabsServiceConnection;
-import android.support.customtabs.CustomTabsSession;
-import android.content.ComponentName;
-import android.content.Intent;
-import android.net.Uri;
-
 public class WebViewActivity extends BaseFragmentActivity {
 
     private static final String ARG_URL = "url";
