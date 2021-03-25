@@ -110,6 +110,7 @@ task(version) doLast {
 }
 
 dependencies {
+    implementation "androidx.browser:browser:1.3.0"
     implementation fileTree(dir: 'libs', include: '*.jar')
 
     implementation project (':android-iconify')
