@@ -22,6 +22,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.browser.customtabs.CustomTabsService;
+import androidx.browser.customtabs.CustomTabsIntent;
 
 public class WebViewActivity extends BaseFragmentActivity {
 
