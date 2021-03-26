@@ -18,7 +18,7 @@ import org.edx.mobile.base.BaseFragmentActivity;
 import org.edx.mobile.util.AppConstants;
 import org.edx.mobile.view.custom.URLInterceptorWebViewClient;
 
-import android.support.customtabs.CustomTabsIntent;
+import androidx.customtabs.CustomTabsIntent;
 
 public class WebViewActivity extends BaseFragmentActivity {
 
