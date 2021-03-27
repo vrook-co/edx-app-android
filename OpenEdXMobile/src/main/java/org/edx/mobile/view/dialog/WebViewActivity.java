@@ -50,11 +50,11 @@ public class WebViewActivity extends BaseFragmentActivity {
         final Uri intentData = getIntent().getData();
         if (intentData != null && AppConstants.APP_URI_SCHEME.startsWith(intentData.getScheme())) {
             final String title = intentData.getHost();
-            final String url = intentData.getQueryParameter(PARAM_INTENT_FILE_LINK);
 
             getIntent().putExtra(ARG_URL, url).putExtra(ARG_TITLE, title);
         }
 
+        final String url = intentData.getQueryParameter(PARAM_INTENT_FILE_LINK);
 /*        final ProgressBar progress = (ProgressBar) findViewById(R.id.loading_indicator);
         progress.setVisibility(View.GONE);
 
