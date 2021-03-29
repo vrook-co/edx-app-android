@@ -280,6 +280,7 @@ dependencies {
 configurations {
     androidTestImplementation.exclude group: 'javax.inject'
     androidTestImplementation.exclude group: 'javax.annotation'
+    all*.exclude group: 'com.google.guava', module: 'listenablefuture'
 }
 
 def config = new TaskHelper().loadConfig(project)
