@@ -18,8 +18,6 @@ import org.edx.mobile.base.BaseFragmentActivity;
 import org.edx.mobile.util.AppConstants;
 import org.edx.mobile.view.custom.URLInterceptorWebViewClient;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.browser.customtabs.CustomTabsService;
 import androidx.browser.customtabs.CustomTabsIntent;
