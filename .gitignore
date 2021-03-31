@@ -65,3 +65,6 @@ test-build
 
 # reports directory
 /artifacts
+
+# ctags dir
+/tags

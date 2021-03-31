@@ -20,8 +20,7 @@ import de.greenrobot.event.EventBus;
 
 import org.edx.mobile.view.dialog.WebViewActivity;
 
-//public class CourseDatesFragment extends AuthenticatedWebViewFragment {
-public class CourseDatesFragment extends WebViewActivity {
+public class CourseDatesFragment extends AuthenticatedWebViewFragment {
     private static final Logger logger = new Logger(CourseDatesFragment.class.getName());
 
     public static Bundle makeArguments(@NonNull Context context,

@@ -24,8 +24,7 @@ import static org.edx.mobile.util.links.WebViewLink.Authority.ENROLLED_COURSE_IN
 
 import org.edx.mobile.view.dialog.WebViewActivity;
 
-//public class CourseUpgradeWebViewFragment extends AuthenticatedWebViewFragment {
-public class CourseUpgradeWebViewFragment extends WebViewActivity {
+public class CourseUpgradeWebViewFragment extends AuthenticatedWebViewFragment {
     @Inject
     AnalyticsRegistry analyticsRegistry;
 
