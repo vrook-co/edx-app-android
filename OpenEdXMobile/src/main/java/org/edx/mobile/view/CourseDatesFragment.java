@@ -46,7 +46,7 @@ public class CourseDatesFragment extends AuthenticatedWebViewFragment {
             // Append function call in javascript
             javascript += functionCall;
         }
-        return WebViewActivity.makeArguments(courseInfoUrl.toString(), javascript, true);
+        return AuthenticatedWebViewFragment.makeArguments(courseInfoUrl.toString(), javascript, true);
     }
 
     public static CourseDatesFragment newInstance(@NonNull Context context,
