@@ -22,6 +22,7 @@ import org.edx.mobile.base.BaseFragment;
 import org.edx.mobile.logger.Logger;
 import org.edx.mobile.util.UiUtil;
 import org.edx.mobile.view.custom.AuthenticatedWebView;
+import org.edx.mobile.view.dialog.WebViewActivity;
 
 import roboguice.inject.InjectView;
 
@@ -112,7 +113,8 @@ public class AuthenticatedWebViewFragment extends BaseFragment {
             btnContentErrorAction.setVisibility(View.VISIBLE);
             btnContentErrorAction.setText(R.string.lbl_reload);
             btnContentErrorAction.setOnClickListener(
-                    v -> UiUtil.restartFragment(AuthenticatedWebViewFragment.this));
+                    //v -> UiUtil.restartFragment(AuthenticatedWebViewFragment.this));
+                    v -> UiUtil.restartFragment(WebViewActivity.this));
         }
     }
 

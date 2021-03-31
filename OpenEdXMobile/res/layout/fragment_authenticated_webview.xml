@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <org.edx.mobile.view.custom.AuthenticatedWebView
+        <!--     <org.edx.mobile.view.custom.AuthenticatedWebView   -->
+        <org.edx.mobile.view.dialog.WebViewActivity
         android:id="@+id/auth_webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

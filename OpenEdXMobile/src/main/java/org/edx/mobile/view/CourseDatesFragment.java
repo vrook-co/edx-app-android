@@ -18,7 +18,10 @@ import java.io.IOException;
 
 import de.greenrobot.event.EventBus;
 
-public class CourseDatesFragment extends AuthenticatedWebViewFragment {
+import org.edx.mobile.view.dialog.WebViewActivity;
+
+//public class CourseDatesFragment extends AuthenticatedWebViewFragment {
+public class CourseDatesFragment extends WebViewActivity {
     private static final Logger logger = new Logger(CourseDatesFragment.class.getName());
 
     public static Bundle makeArguments(@NonNull Context context,
@@ -44,7 +47,8 @@ public class CourseDatesFragment extends AuthenticatedWebViewFragment {
             // Append function call in javascript
             javascript += functionCall;
         }
-        return AuthenticatedWebViewFragment.makeArguments(courseInfoUrl.toString(), javascript, true);
+        //return AuthenticatedWebViewFragment.makeArguments(courseInfoUrl.toString(), javascript, true);
+        return WebViewActivity.makeArguments(courseInfoUrl.toString(), javascript, true);
     }
 
     public static CourseDatesFragment newInstance(@NonNull Context context,

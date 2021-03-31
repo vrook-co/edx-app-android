@@ -22,7 +22,10 @@ import roboguice.inject.InjectView;
 
 import static org.edx.mobile.util.links.WebViewLink.Authority.ENROLLED_COURSE_INFO;
 
-public class CourseUpgradeWebViewFragment extends AuthenticatedWebViewFragment {
+import org.edx.mobile.view.dialog.WebViewActivity;
+
+//public class CourseUpgradeWebViewFragment extends AuthenticatedWebViewFragment {
+public class CourseUpgradeWebViewFragment extends WebViewActivity {
     @Inject
     AnalyticsRegistry analyticsRegistry;
 

@@ -26,7 +26,10 @@ import org.edx.mobile.view.custom.URLInterceptorWebViewClient;
 import de.greenrobot.event.EventBus;
 import roboguice.inject.InjectView;
 
-public class WebViewProgramFragment extends AuthenticatedWebViewFragment {
+import org.edx.mobile.
+
+//public class WebViewProgramFragment extends AuthenticatedWebViewFragment {
+public class WebViewProgramFragment extends WebViewActivity {
 
     @Nullable
     @InjectView(R.id.loading_indicator)
