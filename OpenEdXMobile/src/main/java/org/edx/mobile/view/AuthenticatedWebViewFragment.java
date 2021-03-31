@@ -113,8 +113,7 @@ public class AuthenticatedWebViewFragment extends BaseFragment {
             btnContentErrorAction.setVisibility(View.VISIBLE);
             btnContentErrorAction.setText(R.string.lbl_reload);
             btnContentErrorAction.setOnClickListener(
-                    //v -> UiUtil.restartFragment(AuthenticatedWebViewFragment.this));
-                    v -> UiUtil.restartFragment(WebViewActivity.this));
+                    v -> UiUtil.restartFragment(AuthenticatedWebViewFragment.this));
         }
     }
 
