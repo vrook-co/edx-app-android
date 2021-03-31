@@ -28,7 +28,7 @@ import roboguice.inject.InjectView;
 
 import org.edx.mobile.view.dialog.WebViewActivity;
 
-public class WebViewProgramFragment extends WebViewActivity {
+public class WebViewProgramFragment extends AuthenticatedWebViewFragment {
 
     @Nullable
     @InjectView(R.id.loading_indicator)
