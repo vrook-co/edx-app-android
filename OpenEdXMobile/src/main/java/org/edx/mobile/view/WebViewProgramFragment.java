@@ -26,7 +26,7 @@ import org.edx.mobile.view.custom.URLInterceptorWebViewClient;
 import de.greenrobot.event.EventBus;
 import roboguice.inject.InjectView;
 
-import org.edx.mobile.
+import org.edx.mobile.view.dialog.WebViewActivity;
 
 //public class WebViewProgramFragment extends AuthenticatedWebViewFragment {
 public class WebViewProgramFragment extends WebViewActivity {
